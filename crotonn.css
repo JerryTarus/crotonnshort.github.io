@@ -100,3 +100,32 @@ button:hover {
     /* background: linear-gradient(-135deg, #dc47f0, #f86d2d);  */
 }
 
+/* This is not even displayed */
+#generated-url {
+    display: none;
+    margin: 20px 0;
+}
+
+#short-link {
+    color: rgba(76, 76, 250, 0.938);
+    text-decoration: none;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Then finally, our footer styling */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: #f5f5f5;
+    text-align: center;
+    font-weight: var(--font-semi);
+    padding: 10px;
+    margin: auto;
+}
+
+
