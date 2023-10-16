@@ -58,6 +58,24 @@ span {
     margin: 20px 0;
 }
 
+/* Styling Input */
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    width: 80%;
+    max-width: 400px;
+}
 
+/* The image needs some work too */
+img {
+    width: 34%;
+    height: auto;
+    max-height: 100%;
+    margin-left: 55%;
+    position: absolute;
+    top: 120px;
+    
+}
 
 
