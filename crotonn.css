@@ -41,4 +41,10 @@ main {
     justify-content: center;
     position: relative;
 }
-
+/* Additional content under main */
+.bcontent {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1.2rem;
+}
