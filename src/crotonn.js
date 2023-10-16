@@ -10,3 +10,12 @@ document.addEventListener('DOMContentLoaded', function () {
      shortenButton.addEventListener('click', () => {
         shortenURL();
 });
+
+
+    // Event Listener to listen to submit button on Enter key press
+    originalUrlInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+            e.preventDefault();
+            shortenURL();
+        }
+    });
