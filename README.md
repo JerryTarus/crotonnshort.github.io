@@ -2,7 +2,8 @@
 
 # Crotonn Short 
 
-Crotonn Short is a simple and user-friendly web app that allows you to shorten long URLs with ease. It is built using HTML, CSS, and JavaScript and leverages the Bitly API for URL shortening.
+Crotonn Short is a simple and user-friendly web app that allows you to shorten long URLs with ease. 
+The technology stack used here is only  HTML, CSS, and Vanilla JavaScript and leverages the Bitly API for URL shortening.
 
 ![Alt text](img/crotonnshort.png)
 
@@ -20,21 +21,23 @@ Crotonn Short is a simple and user-friendly web app that allows you to shorten l
 ## Features
 
 - Shorten long URLs quickly and efficiently.
-- User-friendly interface with a clean design.
+- User-friendly interface with a clean and minimal design.
 - Asynchronous interaction with the Bitly API.
 - Error handling for invalid URLs and API errors.
 - Single-page web app with no page redirects.
-- Utilizes event listeners for seamless user interaction.
+- Event listeners for seamless user interaction.
 
 ## Getting Started
 
-Follow these instructions to get your copy of Crotonn Short up and running.
+Follow the instructions below to get your copy of Crotonn Short up and running.
 
 ### Prerequisites
 
 Before you begin, you'll need the following:
 
-- A Bitly account and API key (access token). You can obtain one by following Bitly's registration process.
+- A Bitly account and API key (access token). 
+You can obtain one by following Bitly's registration process which involves signing up to their site and creating a Developer Account. 
+
 
 ### Installation
 
