@@ -94,3 +94,9 @@ button {
 
 }
 
+button:hover {
+    background: linear-gradient(-135deg, #71b7e6, #9b59b6); 
+
+    /* background: linear-gradient(-135deg, #dc47f0, #f86d2d);  */
+}
+
