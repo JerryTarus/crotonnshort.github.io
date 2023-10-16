@@ -78,4 +78,13 @@ function shortenURL() {
         }
     })
 
-    
+           // Error handling
+           .catch(error => {
+            console.error('Error generating shortened URL:', error);
+            generatedUrlDiv.classList.add('error');
+            shortLink.textContent = 'Error generating shortened URL';
+            generatedUrlDiv.style.display = 'block';
+        });
+    }
+});
+ 
