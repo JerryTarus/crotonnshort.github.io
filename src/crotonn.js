@@ -19,3 +19,25 @@ document.addEventListener('DOMContentLoaded', function () {
             shortenURL();
         }
     });
+
+
+       // This focuses on input when the page loads
+       document.addEventListener('DOMContentLoaded', () => {
+        originalUrlInput.focus();
+    });
+
+    // This clears input when the user clicks on it
+    originalUrlInput.addEventListener('click', () => {
+        originalUrlInput.value = '';
+    });
+
+    // This hides the shortened URL on click
+    shortLink.addEventListener('click', () => {
+        generatedUrlDiv.style.display = 'none';
+    });
+
+    // This resets input and hide shortened URL on focus
+    originalUrlInput.addEventListener('focus', () => {
+        originalUrlInput.value = '';
+        generatedUrlDiv.style.display = 'none';
+    });
