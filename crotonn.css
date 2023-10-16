@@ -78,4 +78,19 @@ img {
     
 }
 
+/* Takes care of button styling */
+button {
+    display: inline-block;
+    background: linear-gradient(135deg, #dc47f0, #f86d2d); 
+    color: whitesmoke;
+    padding: 10px 20px;
+    font-weight: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+    letter-spacing: 1px;
+    height: 100%;
+    border: none;
+
+}
 
