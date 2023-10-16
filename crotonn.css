@@ -9,3 +9,12 @@ body, h1, p {
 body {
     background-color: #f0f0f0;
 }
+
+/* Header Styling */
+header {
+    /* color: rgba(252, 28, 140, 0.925); */
+    color: rgba(76, 76, 250, 0.938);
+    text-align: left;
+    padding: 10px 0;
+    margin-left: 40px;
+}
