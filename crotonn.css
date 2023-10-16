@@ -48,3 +48,14 @@ main {
     line-height: 1.2;
     margin-bottom: 1.2rem;
 }
+
+/* Styling URLs on bcontent */
+span {
+    color:rgba(250, 43, 146, 0.925);
+}
+
+.input-container {
+    margin: 20px 0;
+}
+
+
