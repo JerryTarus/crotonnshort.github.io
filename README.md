@@ -40,13 +40,13 @@ Follow the instructions below to get your copy of Crotonn Short up and running.
 
 Before you begin, you'll need the following:
 
-- A 🔐 Bitly account and API key (access token). 
+- 🔐 A Bitly account and API key🔑 (access token). 
 You can obtain one by following Bitly's registration process which involves signing up to their site and creating a Developer Account. You should then generate an access token, or an API Key which you will use for your desired app.
 The screenshot below shows you the right page you should be at.
 ![Alt text](<img/bitly api.png>)
 
 
-### 🛠️ Installation
+### 🛠️ 🛠️ 🛠️ Installation
 
 1. Clone the repository to your local machine:
 👨‍💻
@@ -60,13 +60,12 @@ Launch the app on the browser.
 🌐 🌐 🌐 🌐 🌐 🌐 🌐 🌐 🌐 🌐
 
 
-The final result should be like the screenshot below...
+The final result should look like the screenshot below...
 
 ![Alt text](img/crotonnshort.png)
 
 
 🤺 🤺 🤺 
-This project is protected under the 
-MIT License
+This project is protected under the MIT License...
 
-Copyright © 2023 Jerry Tarus
+Copyright © 2023 Crotonn Short
