@@ -50,3 +50,32 @@ function shortenURL() {
 
     // This clears any previous error messages
     generatedUrlDiv.classList.remove('error');
+
+    // Fetch API to make an asynchronous POST request to the Bitly API
+    fetch(`https://api-ssl.bitly.com/v4/shorten`, {
+        method: 'POST',
+        headers: {
+            'Authorization': `Bearer ${apiKey}`,
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            long_url: originalUrl,
+        }),
+    })
+
+    .then(response => response.json())
+    .then(data => {
+        if (data.link) {
+            // This block will help display the shortened URL
+            shortLink.href = data.link;
+            shortLink.textContent = data.link;
+            generatedUrlDiv.style.display = 'block';
+        } else {
+            // While this handles cases where the response is not a valid URL
+            generatedUrlDiv.classList.add('error');
+            shortLink.textContent = 'Invalid URL or API error';
+            generatedUrlDiv.style.display = 'block';
+        }
+    })
+
+    
