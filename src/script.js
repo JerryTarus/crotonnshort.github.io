@@ -106,10 +106,10 @@ document.addEventListener('DOMContentLoaded', function () {
         const originalUrl = document.getElementById('original-url').value;
 
         shortenURL(originalUrl, bitlyAccessToken).then(shortenedUrl => {
-            // Display the social media icons
+            // This displays the social media icons
             socialSharing.classList.remove('hidden');
 
-            // Set the sharing URLs for each platform with the shortened link
+            // This sets the sharing URLs for each platform with the shortened link
             const shareUrl = encodeURIComponent(shortenedUrl);
             socialSharing.querySelector('.fa-facebook').href = `https://www.facebook.com/sharer.php?u=${shareUrl}`;
             socialSharing.querySelector('.fa-whatsapp').href = `https://wa.me/?text=${shareUrl}`;
