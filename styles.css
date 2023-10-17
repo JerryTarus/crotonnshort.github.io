@@ -119,6 +119,37 @@ button:hover {
 }
 
 
+/* Styling for social sharing buttons */
+
+
+
+.fa {
+    padding: 8px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    background-color: rgba(250, 43, 146, 0.925); 
+    /* color: rgba(108, 108, 223, 0.938); */
+    /* color: rgba(250, 43, 146, 0.925); */
+  }
+
+  .fa:hover {
+    opacity: 0.65;
+    /* color: rgba(250, 43, 146, 0.925); */
+    color: rgba(76, 76, 250, 0.938);
+    
+  }
+
+  /* Initial style for hidden social media icons */
+.social-sharing.hidden {
+    display: none;
+}
+
+
+
+
 /* Then finally, our footer styling */
 .footer {
     position: fixed;

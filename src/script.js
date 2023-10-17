@@ -40,6 +40,12 @@ document.addEventListener('DOMContentLoaded', function () {
         generatedUrlDiv.style.display = 'none';
     });
 
+
+
+
+
+
+
     // Time to write function to shorten the URL
     function shortenURL() {
         const originalUrl = originalUrlInput.value;
@@ -85,3 +91,58 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
+
+
+
+// This part handles the Social Media Buttons 
+document.addEventListener('DOMContentLoaded', function () {
+    const shortenButton = document.getElementById('shorten-button');
+    const socialSharing = document.querySelector('.social-sharing');
+
+    // Event Listener to show social media icons after URL is shortened
+    shortenButton.addEventListener('click', () => {
+        // Access token goes here (API Key)
+        const bitlyAccessToken = '6fab06a885c7e3b4c88f9aa919496dcfa8f6976a';
+        const originalUrl = document.getElementById('original-url').value;
+
+        shortenURL(originalUrl, bitlyAccessToken).then(shortenedUrl => {
+            // Display the social media icons
+            socialSharing.classList.remove('hidden');
+
+            // Set the sharing URLs for each platform with the shortened link
+            const shareUrl = encodeURIComponent(shortenedUrl);
+            socialSharing.querySelector('.fa-facebook').href = `https://www.facebook.com/sharer.php?u=${shareUrl}`;
+            socialSharing.querySelector('.fa-whatsapp').href = `https://wa.me/?text=${shareUrl}`;
+            socialSharing.querySelector('.fa-instagram').href = `https://www.instagram.com/sharer.php?u=${shareUrl}`;
+            socialSharing.querySelector('.fa-twitter').href = `https://twitter.com/intent/tweet?url=${shareUrl}`;
+        });
+    });
+
+    // Function to shorten the URL using the Bitly API
+    async function shortenURL(originalUrl, accessToken) {
+        const bitlyApiUrl = 'https://api-ssl.bitly.com/v4/shorten';
+        const headers = {
+            'Authorization': `Bearer ${accessToken}`,
+            'Content-Type': 'application/json',
+        };
+
+        const data = JSON.stringify({
+            long_url: originalUrl,
+        });
+
+        const response = await fetch(bitlyApiUrl, {
+            method: 'POST',
+            headers: headers,
+            body: data,
+        });
+
+        const result = await response.json();
+
+        if (result.link) {
+            return result.link;
+        } else {
+            throw new Error('Bitly API error');
+        }
+    }
+});
+
